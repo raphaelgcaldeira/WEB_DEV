@@ -512,7 +512,7 @@ main { padding: 58px 0 80px; }
 }
 
 .contact-container {
-	min-width: 10rem;
+	min-width: 10rem; 
 	min-height: auto;
 	margin-right: 2rem;
 	padding: 4rem 5rem;
