@@ -517,7 +517,7 @@ main { padding: 58px 0 80px; }
 	margin-right: 2rem;
 	padding: 4rem 5rem;
 	border-radius: 1rem;
-	background-color: rgba(252, 252, 252, 0.900);
+	background-color: rgba(252, 252, 252, 0.900); 
 }
 
 @media (max-width: 1024px) {
