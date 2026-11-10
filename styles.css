@@ -506,7 +506,7 @@ main { padding: 58px 0 80px; }
 .about-container {
 	max-width: 50rem;
 	min-height: 16.2rem;
-	padding: 3rem 2rem;
+	padding: 3rem 2rem; 
 	border-radius: 1rem;
 	background-color: rgba(252, 252, 252, 0.900);
 }
