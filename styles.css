@@ -25,6 +25,16 @@ img { max-width: 100%; display: block; }
 
 a { text-decoration: none; color: inherit; }
 
+#submit-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  width: 30%;
+  height: 3rem;
+}
+
 .container {
 	width: min(1180px, calc(100% - 32px));
 	margin: 0 auto;
@@ -32,13 +42,23 @@ a { text-decoration: none; color: inherit; }
 }
 
 .container-support {
-	min-width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 5rem 5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 4rem;
+	gap: 0rem;
+}
+
+.container-about {
+	min-width: 100%;
+	margin: 0 auto;
+	padding: 5rem 4.2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
 }
 
 .topbar {
@@ -142,8 +162,15 @@ a { text-decoration: none; color: inherit; }
 }
 
 .support-hero {
+	min-height: 36rem;
 	position: relative;
 	padding: 2rem 0rem;
+}
+
+.support-about {
+	position: relative;
+	padding: 2rem 0rem;
+	background-color: #0b5cff;
 }
 
 .hero-inner {
@@ -449,8 +476,49 @@ main { padding: 58px 0 80px; }
 	padding: 18px;
 }
 
+.email-support {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(23, 32, 51, 0.06);
+  font-size: 1rem;
+  margin-top: 12px;
+}
+
 .promo-box .discount { font-size: 2.3rem; font-weight: 800; letter-spacing: -0.08em; }
 .promo-box small { display: block; line-height: 1.6; color: rgba(255, 255, 255, 0.72); }
+
+.text-container {
+	min-width: 49.1rem;
+	min-height: auto;
+	padding: 2rem 3rem;
+	border-radius: 1rem;
+	background-color: lightgrey;
+}
+
+.img-container {
+	min-width: 50rem;
+	min-height: auto;
+	padding: 0rem 16.5rem;
+	border-radius: 1rem;
+}
+
+.about-container {
+	max-width: 50rem;
+	min-height: 16.2rem;
+	padding: 3rem 2rem;
+	border-radius: 1rem;
+	background-color: rgba(252, 252, 252, 0.900);
+}
+
+.contact-container {
+	min-width: 10rem;
+	min-height: auto;
+	margin-right: 2rem;
+	padding: 4rem 5rem;
+	border-radius: 1rem;
+	background-color: rgba(252, 252, 252, 0.900);
+}
 
 @media (max-width: 1024px) {
 	.hero-inner, .cta-banner, .cards { grid-template-columns: 1fr 1fr; }
