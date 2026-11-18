@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/js/support.js"></script>
     <title>Support</title>
-</head>
+</head> 
 <body>
     <header class="topbar">
       <div class="container nav">
@@ -34,7 +35,7 @@
       <div class="container-support">
 
           <div class="text-container">
-              <h1 id="support-title">Entre em contato</h1>
+              <h1 id="support-title"><b>Entre em contato</b></h1>
               <p id="support-subtitle">Precisa de ajuda? Nossa equipe de suporte está aqui para você.</p>
               <input type="email" placeholder="Digite seu e-mail" class="email-support">
               <input type="submit" value="Enviar" id="submit-container">
@@ -53,12 +54,19 @@
         <div class="container-about">
 
           <div class="about-container" id="about">
-            <h2>Sobre o Nós</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo placeat doloremque, sequi temporibus, corrupti esse similique, eos commodi non vitae? Error sunt temporibus sint hic vero deserunt illo quidem.</p>
+            <h2><b>Sobre o Nós</b></h2> 
+            <p>
+              Acreditamos que viajar vai muito além de reservar uma passagem
+              é sobre viver novas histórias sem complicação. Nossa plataforma reúne tarifas competitivas,
+              destinos selecionados e ferramentas intuitivas para transformar o planejamento da sua viagem em uma experiência simples, transparente e segura.
+              <br>
+              Com tecnologia pensada para agilizar suas escolhas e uma equipe de suporte pronta para ajudar em cada etapa,
+              cuidamos dos detalhes para que você se preocupe apenas com o próximo embarque. 
+            </p>
           </div>
 
           <div class="contact-container">
-            <h2>Contato</h2>
+            <h2><b>Contato</b></h2>
             <p>Email: suporte@travelly.com</p>
             <p>Telefone: +55 11 1234-5678</p>
 
@@ -67,5 +75,28 @@
         </div>
 
     </section>
+
+    <button type="button" class="chat-btn" onclick="alternarChat()">
+      💬 Chat
+    </button>
+
+    <div class="chat-janela" id="miniChat">
+      <div class="chat-topo">
+        <span>Suporte Online</span>
+        <button type="button" class="chat-fechar" onclick="alternarChat()">✕</button>
+      </div>
+
+      <div class="chat-mensagens">
+        <div class="msg-atendente">
+          Olá! Como podemos ajudar você hoje?
+        </div>
+      </div>
+
+      <div class="chat-rodape">
+        <input type="text" placeholder="Digite sua mensagem...">
+        <button type="button">Enviar</button>
+      </div>
+    </div>
+    
 </body>
 </html>
