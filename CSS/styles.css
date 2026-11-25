@@ -162,6 +162,10 @@ a { text-decoration: none; color: inherit; }
 	color: var(--primary-dark);
 }
 
+.booking {
+	
+}
+
 .hero {
 	position: relative;
 	padding: 42px 0 72px;
